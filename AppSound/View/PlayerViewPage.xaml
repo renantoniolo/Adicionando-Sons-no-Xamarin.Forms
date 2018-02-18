@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="AppSound.PlayerViewPage">
+	<ContentPage.Content>
+        <StackLayout 
+            Margin="10"
+            HorizontalOptions="Fill" 
+            VerticalOptions="Fill">
+            
+            <Label 
+                Text="Player Sound" 
+                TextColor="#000" 
+                HorizontalTextAlignment="Center"
+                FontSize="Large" />
+
+            <Grid
+                Padding="5"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
+                </Grid.RowDefinitions>
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Label 
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    VerticalTextAlignment="Center"
+                    Text="Alarme" 
+                    TextColor="#000" 
+                    FontSize="Medium" />
+
+                <Button
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Text="Play"
+                    TextColor="Blue"
+                    Command="{Binding Sound01PlayCommand}" />
+
+                <Button
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    Text="Stop"
+                    TextColor="Blue"
+                    Command="{Binding Sound01StopCommand}" />
+
+                <Label 
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    VerticalTextAlignment="Center"
+                    Text="Madeira Serrando" 
+                    TextColor="#000" 
+                    FontSize="Medium" />
+
+                <Button
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Text="Play"
+                    TextColor="Blue"
+                    Command="{Binding Sound02PlayCommand}" />
+
+                <Button
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    Text="Stop"
+                    TextColor="Blue"
+                    Command="{Binding Sound02StopCommand}" />
+
+                <Label 
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    VerticalTextAlignment="Center"
+                    Text="Formula 1" 
+                    TextColor="#000" 
+                    FontSize="Medium" />
+
+                <Button
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Text="Play"
+                    TextColor="Blue"
+                    Command="{Binding Sound03PlayCommand}" />
+
+                <Button
+                    Grid.Row="2"
+                    Grid.Column="2"
+                    Text="Stop"
+                    TextColor="Blue"
+                    Command="{Binding Sound03StopCommand}" />
+
+            </Grid>
+     
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>
